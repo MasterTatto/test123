@@ -1,0 +1,41 @@
+@import "../../assets/styles/globals";
+
+
+.item {
+  @extend .h2;
+  padding-left: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+
+  &:before {
+    content: '';
+    display: block;
+    width: 4px;
+    height: 100%;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: $white-100;
+  }
+
+  &:last-child {
+    margin-top: auto;
+  }
+
+
+  a {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: $white-90;
+  }
+
+  a.active {
+    color: $white-100;
+  }
+
+}

@@ -1,0 +1,67 @@
+// Цвета
+$black-100: #181818;
+$black-90: #1C1C1C;
+$black-80: #1F1F1F;
+$black-70: #212121;
+$black-60: #222222;
+$black-50: #2B2B2B;
+
+$white-100: #FFFFFF;
+$white-90: #BDBDBD;
+$white-80: #828282;
+$white-70: #3C3C3C;
+$white-60: #303030;
+
+$greenHigh: #6FCF97;
+$greenMedium: #374F41;
+$greenLow: #29312C;
+
+$redHigh: #FF8888;
+$redMedium: #5B3D3D;
+$redLow: #2C2626;
+
+$purpleHigh: #7E7FEF;
+$purpleMedum: #2D2D5D;
+$purpleLow: #22223A;
+
+$pinkHigh: #BB6BD9;
+$pinkMedum: #533D5C;
+$pinkLow: #33223A;
+
+$blueHigh: #56CCF2;
+$blueMedium: #304E57;
+$blueLow: #2A3336;
+
+$yellowHigh: #F2C94C;
+$yellowMedium: #796834;
+$yellowLow: #413A25;
+
+$orangeHigh: #F2994A;
+$orangeMedium: #795534;
+$orangeLow: #403226;
+
+$navyblueHigh: #7C96F4;
+$navyblueMedum: #3D445C;
+$navyblueLow: #22273A;
+
+
+//Градиент
+$grMain:linear-gradient(96.05deg, #F2E256 -62.89%, #C66DE8 95.21%) ;
+$grButtonGreen: linear-gradient(0deg, rgba(111, 207, 151, 0.1) 0%, rgba(111, 207, 151, 0) 100%);
+$grButtonYellow: linear-gradient(0deg, rgba(242, 201, 76, 0.05) 0%, rgba(242, 201, 76, 0) 100%);
+$grButtonBlue: linear-gradient(0deg, rgba(86, 204, 242, 0.05) 0%, rgba(86, 204, 242, 0) 100%);
+$grBlackMainVertical:linear-gradient(180deg, rgba(31, 31, 31, 0) 0%, #1F1F1F 100%) ;
+$grGraphicsGreen: linear-gradient(180deg, #242D28 0%, rgba(36, 45, 40, 0) 93.75%);
+$grGraphicsBlue: linear-gradient(180deg, #253034 0%, rgba(37, 48, 52, 0) 93.75%);
+$grGraphicsYellow: linear-gradient(180deg, #343024 0%, rgba(52, 48, 36, 0) 93.75%);
+$grGraphicsPurple: linear-gradient(180deg, #33223A 0%, rgba(51, 34, 58, 0) 93.75%);
+$grBlackMainHorizontal: linear-gradient(90deg, #1F1F1F 0%, rgba(31, 31, 31, 0) 100%) ;
+$grNavigationYellow:linear-gradient(180deg, #F2C94C 0%, #F2994A 100%) ;
+$grNavigationGreen: linear-gradient(180deg, #6FCF97 0%, #27AE60 100%);
+$grNavigationPurple: linear-gradient(180deg, #BB6BD9 0%, #56CCF2 100%);
+$grNavigationRed: linear-gradient(180deg, #EB5757 0%, #F2994A 100%);
+$grNavigationWhite: linear-gradient(180deg, #DAF6FF 0%, #333333 100%);
+//$grCopytrader: url(jut15.jpg), linear-gradient(228.65deg, rgba(111, 207, 151, 0.05) 50%, rgba(111, 207, 151, 0) 100%), #1F1F1F;
+//$grRobot:  url(jut15.jpg), linear-gradient(228.65deg, rgba(187, 107, 217, 0.05) 50%, rgba(187, 107, 217, 0) 100%), #1F1F1F;
+
+

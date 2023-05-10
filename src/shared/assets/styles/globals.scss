@@ -1,0 +1,262 @@
+@import "colors";
+
+body{
+  box-sizing: inherit;
+}
+.main{
+  margin-bottom: auto;
+}
+.footer{
+  margin-top: 28px;
+}
+div::-webkit-scrollbar {
+  width: 5px; /* ширина scrollbar */
+}
+
+div::-webkit-scrollbar-track {
+  background: transparent; /* цвет дорожки */
+}
+
+div::-webkit-scrollbar-thumb {
+  background-color: $white-70; /* цвет плашки */
+  border-radius: 20px; /* закругления плашки */
+}
+
+div {
+  scrollbar-width: thin;
+  scrollbar-color: $white-70 transparent;
+}
+
+.h1 {
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: left;
+}
+
+// Оглавление блоков, большие кнопки
+.h2 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+// Сопровождение к элементам
+.subHeaders {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.subHeadersBold {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.subHeadersRegular {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.link {
+  color: $blueHigh;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  text-decoration: underline;
+}
+
+.download {
+  color: $blueHigh;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 26px;
+}
+.header{
+  margin-bottom: 14px;
+}
+.menuList {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  height: 80vh;
+}
+.menuUserList{
+  & .menuItem{
+    &:last-child{
+      margin-top: auto;
+      &:before {
+        background: $blueHigh;
+      }
+    }
+  }
+}
+.menuItem {
+  @extend .h2;
+  padding: 14px;
+  padding-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+
+  &:before {
+    content: '';
+    display: block;
+    width: 4px;
+    height: 100%;
+    background: $white-70;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: $white-100;
+  }
+
+  &.tariff {
+    margin-bottom: 26px;
+  }
+
+  &.support {
+    margin-top: 165px;
+
+  }
+
+  &.menuItemProduct{
+    margin-bottom: 28px;
+  }
+
+  a {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: $white-90;
+  }
+
+  a.active {
+    color: $white-100;
+  }
+
+}
+.white-100 {
+  color: $white-100;
+  fill: $greenHigh;
+}
+
+.white-90 {
+  color: $white-90;
+  fill: $greenHigh;
+}
+
+.white-80 {
+  color: $white-80;
+  fill: $greenHigh;
+}
+
+.white-70 {
+  color: $white-70;
+  fill: $greenHigh;
+}
+
+.white-60 {
+  color: $white-60;
+  fill: $greenHigh;
+}
+
+.green {
+  color: $greenHigh;
+  fill: $greenHigh;
+}
+
+.greenBg {
+  background-color: $greenLow;
+}
+
+.red {
+  color: $redHigh;
+  fill: $redHigh;
+}
+
+.redBg {
+  background-color: $redLow;
+}
+
+.purple {
+  color: $purpleHigh;
+  fill: $purpleHigh;
+}
+
+.purpleBg {
+  background-color: $purpleLow;
+}
+
+.pink {
+  color: $pinkHigh;
+  fill: $pinkHigh;
+}
+
+.pinkBg {
+  background-color: $pinkLow;
+}
+
+.blue {
+  color: $blueHigh;
+  fill: $blueHigh;
+}
+
+.blueBg {
+  background-color: $blueLow;
+}
+
+.yellow {
+  color: $yellowHigh;
+  fill: $yellowHigh;
+}
+
+.yellowBg {
+  background-color: $yellowLow;
+}
+
+.orange {
+  color: $orangeHigh;
+  fill: $orangeHigh;
+}
+
+.orangeBg {
+  background-color: $orangeLow;
+}
+
+.navigationYellow {
+  &:before {
+    background: $grNavigationYellow;
+  }
+}
+
+.navigationGreen {
+  &:before {
+    background: $grNavigationGreen;
+  }
+}
+
+.navigationPurple {
+  &:before {
+    background: $grNavigationPurple;
+  }
+}
+
+.navigationRed {
+  &:before {
+    background: $grNavigationRed;
+  }
+}
+
+.navigationWhite {
+  &:before {
+    background: $grNavigationWhite;
+  }
+}
+.recharts-wrapper{
+  cursor: pointer !important;
+}
