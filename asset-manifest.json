@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/test123/static/css/main.f3fd6e32.css",
-    "main.js": "/test123/static/js/main.cd320190.js",
+    "main.js": "/test123/static/js/main.5b5ec871.js",
     "static/media/amin-panel.png": "/test123/static/media/amin-panel.e49a069d6fe66b1150bb.png",
     "static/media/tariff-copy.svg": "/test123/static/media/tariff-copy.34b17c354f720a78628bd556955db119.svg",
     "static/media/tariff-robot.svg": "/test123/static/media/tariff-robot.f78bcf82b02efb635480ffcc46df5e1f.svg",
@@ -10,10 +10,10 @@
     "static/media/logo.svg": "/test123/static/media/logo.7129b6130594c1d2acf2d57769a251ad.svg",
     "static/media/authLogo.svg": "/test123/static/media/authLogo.193fd42c8ce563ddacf9c5c4f7e0aa4f.svg",
     "main.f3fd6e32.css.map": "/test123/static/css/main.f3fd6e32.css.map",
-    "main.cd320190.js.map": "/test123/static/js/main.cd320190.js.map"
+    "main.5b5ec871.js.map": "/test123/static/js/main.5b5ec871.js.map"
   },
   "entrypoints": [
     "static/css/main.f3fd6e32.css",
-    "static/js/main.cd320190.js"
+    "static/js/main.5b5ec871.js"
   ]
 }
