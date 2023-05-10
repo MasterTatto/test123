@@ -21,7 +21,7 @@ interface IType {
 const SettingProductModal: FC<IType> = ({openModal, closeModal, productId}) => {
     const [updateAccount, {isLoading, error}] = useUpdateProductMutation()
     const {data: accountsData, error: accountsError, isLoading: accountsLoading} = useGetAccountsQuery('/accounts')
-    const mediaQuery = useMediaQuery('(min-width:900px)')
+    const mediaQuery = useMediaQuery('(min-width:1270px)')
     const [open, setOpen] = useState(false);
     const [openModalChild, setOpenModalChild] = useState(false);
     const [step, setStep] = useState(1);

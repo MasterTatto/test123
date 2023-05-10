@@ -10,7 +10,7 @@ import PaymentModal from "./modal/paymentModal";
 
 
 const MyProductItem: FC<IProducts> = ({id,status, valid_to, sub_title, title, slug}) => {
-    const mediaQuery = useMediaQuery('(min-width:900px)');
+    const mediaQuery = useMediaQuery('(min-width:1270px)');
     const [openModal, setOpenModal] = useState(false);
     const [openPaymentModal, setOpenPaymentModal] = useState(false)
     const [paymentLinkId, setPaymentLinkId] = useState(-1)

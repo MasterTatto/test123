@@ -11,7 +11,7 @@ interface T {
 
 
 const Header: FC<T> = ({heading, accountNumber,isSelect, typeAccount}) => {
-    const mediaQuery = useMediaQuery('(min-width:900px)');
+    const mediaQuery = useMediaQuery('(min-width:1270px)');
 
     return (
         <header className="header">

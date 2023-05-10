@@ -56,7 +56,7 @@ const Set: FC<IType> = ({adminSet, data, isLoading}) => {
     const {data: dataLinkedTraders} = useGetAllLinkedTradersQuery(data?.id)
     const [deleteTrader] = useDeleteTraderMutation()
 
-    const mediaQuery = useMediaQuery('(min-width:900px)');
+    const mediaQuery = useMediaQuery('(min-width:1270px)');
 
     const [openModalSetSettings, setOpenModalSetSettings] = useState(false);
     const [openModalSettingsTrader, setOpenModalSettingsTrader] = useState(false);

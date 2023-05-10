@@ -8,7 +8,7 @@ interface IType {
 }
 
 const PartnerLink: FC<IType> = ({children}) => {
-    const mediaQuery = useMediaQuery('(min-width:900px)');
+    const mediaQuery = useMediaQuery('(min-width:1270px)');
     const {data, error, isLoading} = useGetReferralDataQuery('/main')
     const [textBtn, setTextBtn] = useState('Скопировать')
     const handlerCopy = (copy: string) => {

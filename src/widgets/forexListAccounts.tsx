@@ -15,7 +15,7 @@ const ForexListAccounts: FC<IType> = ({children}) => {
     const [sortValue, setSortValue] = useState('')
     const [validatedValue, setValidatedValue] = useState('null')
     const {data, isLoading, error} = useGetForexAccountsQuery({page, sort:sortValue, search:validatedValue})
-    const mediaQuery = useMediaQuery('(min-width:900px)');
+    const mediaQuery = useMediaQuery('(min-width:1270px)');
 
     const handleChange = (event: React.ChangeEvent<unknown>, value: number) => {
         setPage(value);

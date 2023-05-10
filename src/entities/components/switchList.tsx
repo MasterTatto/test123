@@ -9,7 +9,7 @@ interface T {
 }
 
 const SwitchList: FC<T> = ({children}) => {
-    const mediaQuery = useMediaQuery('(min-width:900px)');
+    const mediaQuery = useMediaQuery('(min-width:1270px)');
     // const {switchData} = useAppSelector(state => state.barChartReducer)
     const {deleteBarChart, addBarChart} = barChartSlice.actions
     const dispatch = useAppDispatch()

@@ -16,7 +16,7 @@ const PersonalData = () => {
     return (
            <Paper sx={{height:`100%`}}>
                <Stack className="h2 white-90" sx={{mb: 14}}>Личные данные</Stack>
-               <Divider/>
+               {/*<Divider/>*/}
                <Stack spacing={7}>
                    <CustomInput label="Имя"/>
                    <CustomInput label="Фамилия"/>

@@ -14,7 +14,7 @@ interface IType {
 }
 
 const Referrals: FC<IType> = ({name, link, avatar, registrationDate, lastPayment}) => {
-    const mediaQuery = useMediaQuery('(min-width:900px)');
+    const mediaQuery = useMediaQuery('(min-width:1270px)');
     return (
         <Paper>
             <Stack direction={mediaQuery ? "row": "column"} alignItems={mediaQuery ? "center": "flex-start"} justifyContent="space-between" spacing={7}>

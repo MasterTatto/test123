@@ -41,7 +41,7 @@ const AddProductModal: FC<IType> = ({stateModal, openModal, closeModal}) => {
         error: productError,
         isLoading: productLoading
     }] = useCreateNewProductMutation()
-    const mediaQuery = useMediaQuery('(min-width:900px)');
+    const mediaQuery = useMediaQuery('(min-width:1270px)');
     const [open, setOpen] = useState(false)
     const [openPaymentModal, setOpenPaymentModal] = useState(false)
 

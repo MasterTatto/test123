@@ -17,7 +17,7 @@ interface IType {
 }
 
 const TransactionAccordion: FC<IType> = ({children}) => {
-    const mediaQuery = useMediaQuery('(min-width:900px)');
+    const mediaQuery = useMediaQuery('(min-width:1270px)');
     const [expanded, setExpanded] = useState<string | false>('panel1');
     const [openModal, setOpenModal] = useState(false);
 

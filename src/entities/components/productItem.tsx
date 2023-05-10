@@ -57,7 +57,7 @@ const state = [
 ]
 
 const ProductItem: FC<IType> = ({children}) => {
-    const mediaQuery = useMediaQuery('(min-width:900px)');
+    const mediaQuery = useMediaQuery('(min-width:1270px)');
     const [stateModal, setStateModal] = useState(state[0])
     const [openModal, setOpenModal] = useState(false);
 

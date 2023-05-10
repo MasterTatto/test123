@@ -17,7 +17,7 @@ interface IType {
 }
 
 const TradersList: FC<IType> = ({children}) => {
-    const mediaQuery = useMediaQuery('(min-width:900px)');
+    const mediaQuery = useMediaQuery('(min-width:1270px)');
     const {data} = useGetAllAdminTradersQuery(1)
     const [deleteTrader] = useDeleteTraderMutation()
     const [addTrader] = useAddTraderMutation()

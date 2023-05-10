@@ -27,7 +27,7 @@ const CustomSelect: FC<IType> = ({
                                      optionValue,
                                      isError
                                  }) => {
-    const mediaQuery = useMediaQuery('(min-width:900px)');
+    const mediaQuery = useMediaQuery('(min-width:1270px)');
     const [variantName, setVariantName] = useState<any>([]);
     const [error, setError] = useState(false);
 

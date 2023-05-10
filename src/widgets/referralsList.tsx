@@ -17,7 +17,7 @@ const ReferralsList: FC<IType> = ({children}) => {
         error: isErrorReferralLine,
         isLoading: isLoadingReferralLine
     } = useGetReferralLineUsersQuery(`${idLine}`)
-    const mediaQuery = useMediaQuery('(min-width:900px)');
+    const mediaQuery = useMediaQuery('(min-width:1270px)');
     const [alignment, setAlignment] = useState<string | null>('left');
     const [referral, setReferral] = useState([]);
     const [activeBtn, setActiveBtn] = useState(1);

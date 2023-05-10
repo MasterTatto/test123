@@ -29,21 +29,18 @@ interface IType {
 }
 
 
-
-
-
 const DashboardTabs: FC<IType> = ({traderDashboard, dataDashboard}) => {
 
     const {barChartData} = useAppSelector(state => state.barChartReducer)
-    const mediaQuery = useMediaQuery('(min-width:900px)');
+    const mediaQuery = useMediaQuery('(min-width:1270px)');
     const [sidebarVisible, setSidebarVisible] = useState(true);
     const [value, setValue] = useState(0);
     const [dataChart, setDataChart] = useState<any>([]);
     const location = useLocation()
     const id = location?.pathname?.split('/').pop()
     const {data} = useGetAllSubscribesQuery(id)
-    const {data:dataSet} = useGetAllSubscribesSetQuery(id)
-    const {data:dataHistory} = useGetHistoryQuery(id)
+    const {data: dataSet} = useGetAllSubscribesSetQuery(id)
+    const {data: dataHistory} = useGetHistoryQuery(id)
 
 
     useEffect((() => {
@@ -98,8 +95,7 @@ const DashboardTabs: FC<IType> = ({traderDashboard, dataDashboard}) => {
                                 }
                                 <DashboardLabel notProduct={!traderDashboard} updateTariff={!traderDashboard}
                                                 balance={dataDashboard?.balance}/>
-                                <TransactionsLabel  data={dataDashboard?.deals_count}/>
-
+                                <TransactionsLabel data={dataDashboard?.deals_count}/>
 
 
                                 <Chart title="Баланс" icon="bad" date>

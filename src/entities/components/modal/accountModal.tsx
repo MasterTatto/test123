@@ -27,8 +27,8 @@ const AccountModal: FC<IType> = ({maxWidth, openModal, closeModal, isError}) => 
     const [step, setStep] = useState(1);
     const [serverNumber, setServerNumber] = useState('');
     const [errorInput, setErrorInput] = useState(false);
-    const login = useInput('',errorInput)
-    const password = useInput('',errorInput)
+    const login = useInput('', errorInput)
+    const password = useInput('', errorInput)
     const [errorSelect, setErrorSelect] = useState(false);
 
     useEffect((() => {
@@ -48,12 +48,12 @@ const AccountModal: FC<IType> = ({maxWidth, openModal, closeModal, isError}) => 
                     }
                 }
             )
-        }else{
+        } else {
             setErrorSelect(true)
             setErrorInput(true)
         }
-       // if(login.value !== '') setErrorInput(true)
-       // if(serverNumber !== '') setErrorSelect(true)
+        // if(login.value !== '') setErrorInput(true)
+        // if(serverNumber !== '') setErrorSelect(true)
     };
 
 

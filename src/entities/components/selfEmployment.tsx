@@ -11,42 +11,43 @@ interface IType {
 }
 
 const SelfEmployment: FC<IType> = ({children}) => {
-   const [visible, setVisible]=useState(false)
+    const [visible, setVisible] = useState(false)
     return (
-            <Paper sx={{height:`100%`}}>
-                <Stack className="h2 white-90" sx={{mb: 14}}>Личные данные</Stack>
-                <Divider/>
-                <Stack spacing={7}>
-                    {
-                        visible &&
-                        <>
-                            <CustomInput label="Имя"/>
-                            <CustomInput label="Фамилия"/>
-                            <Button
-                                fullWidth
-                                variant="contained"
-                                color="success"
-                            >Отправить</Button>
-                        </>
-                    }
-
-                    <Stack sx={{p: `14px`, border: `0.5px solid #3C3C3C`, borderRadius: 2.5}}>
-                        <span className="h2 blue">Почему нужна самозанятость?</span>
-                        <Stack sx={{mb:80}}>
-                            Самоза́нятость — форма получения вознаграждения за свой труд непосредственно от заказчиков, в
-                            отличие от наёмной работы. Оформите ее, чтобы не получать комиссий и других издержек альтернативных
-                            способов сотрудничества
-                        </Stack>
+        <Paper sx={{height: `100%`}}>
+            <Stack className="h2 white-90" sx={{mb: 14}}>Личные данные</Stack>
+            {/*<Divider/>*/}
+            <Stack spacing={7}>
+                {
+                    visible &&
+                    <>
+                        <CustomInput label="Имя"/>
+                        <CustomInput label="Фамилия"/>
                         <Button
-                            onClick={()=>setVisible(true)}
                             fullWidth
-                            variant="outlined"
+                            variant="contained"
                             color="success"
-                        >Внести данные</Button>
-                    </Stack>
+                        >Отправить</Button>
+                    </>
+                }
 
+                <Stack sx={{p: `14px`, border: `0.5px solid #3C3C3C`, borderRadius: 2.5}}>
+                    <span className="h2 blue">Почему нужна самозанятость?</span>
+                    <Stack sx={{mb: 80}}>
+                        Самоза́нятость — форма получения вознаграждения за свой труд непосредственно от заказчиков, в
+                        отличие от наёмной работы. Оформите ее, чтобы не получать комиссий и других издержек
+                        альтернативных
+                        способов сотрудничества
+                    </Stack>
+                    <Button
+                        onClick={() => setVisible(true)}
+                        fullWidth
+                        variant="outlined"
+                        color="success"
+                    >Внести данные</Button>
                 </Stack>
-            </Paper>
+
+            </Stack>
+        </Paper>
 
     );
 };

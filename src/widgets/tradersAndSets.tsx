@@ -26,7 +26,7 @@ interface IType {
 const TradersAndSets: FC<IType> = ({data, accountId,dataSets}) => {
     console.log(data)
     const [deleteAccount] = useDeleteAccountMutation()
-    const mediaQuery = useMediaQuery('(min-width:900px)');
+    const mediaQuery = useMediaQuery('(min-width:1270px)');
     const [value, setValue] = useState(0);
     const navigate = useNavigate()
 
@@ -46,14 +46,14 @@ const TradersAndSets: FC<IType> = ({data, accountId,dataSets}) => {
                             right: 0,
                             left: 0,
                             background: '#1F1F1F',
-                            "@media (min-width:900px)": {
+                            "@media (min-width:1270px)": {
                                 padding: `14px `,
                             }
                         }
                         : {
                             mb: 7,
                             flexGrow: 1,
-                            "@media (min-width:900px)": {
+                            "@media (min-width:1270px)": {
                                 padding: `8px 14px`,
                             }
                         }
@@ -80,7 +80,7 @@ const TradersAndSets: FC<IType> = ({data, accountId,dataSets}) => {
                                 key={item.trader.id}
                                 sx={{
                                     flexGrow: 1,
-                                    "@media (min-width:900px)": {
+                                    "@media (min-width:1270px)": {
                                         padding: `14px`,
                                     }
                                 }}>
@@ -146,7 +146,7 @@ const TradersAndSets: FC<IType> = ({data, accountId,dataSets}) => {
                                 key={item.set.id}
                                 sx={{
                                     flexGrow: 1,
-                                    "@media (min-width:900px)": {
+                                    "@media (min-width:1270px)": {
                                         padding: `14px`,
                                     }
                                 }}>

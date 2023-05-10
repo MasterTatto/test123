@@ -7,7 +7,7 @@ import ReferralsList from "../widgets/referralsList";
 
 
 const Partner = () => {
-    const mediaQuery = useMediaQuery('(min-width:900px)');
+    const mediaQuery = useMediaQuery('(min-width:1270px)');
 
     return (
         <MainLayout heading="Партнерская программа">

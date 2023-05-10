@@ -39,7 +39,7 @@ const AntTab = styled((props: any) => <Tab disableRipple {...props} />)(
 );
 const TabsHeader: FC<IType> = ({tabsName,onTabsChange,variant,size}) => {
     const [value, setValue] = useState(0);
-    const mediaQuery = useMediaQuery('(min-width:900px)');
+    const mediaQuery = useMediaQuery('(min-width:1270px)');
     const handleChange = (event: React.SyntheticEvent, newValue: number) => {
         setValue(newValue);
         onTabsChange(newValue)

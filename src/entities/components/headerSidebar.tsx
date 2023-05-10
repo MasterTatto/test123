@@ -16,7 +16,7 @@ interface T {
 
 const HeaderSidebar: FC<T> = ({isAdmin,name, images, balance, account}) => {
     const { data, error, isLoading } = useGetProfileQuery('')
-    const mediaQuery = useMediaQuery('(min-width:900px)');
+    const mediaQuery = useMediaQuery('(min-width:1270px)');
     return (
         <Stack direction="row" spacing={7}>
             {

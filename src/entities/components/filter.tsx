@@ -7,7 +7,7 @@ interface IType {
 }
 
 const Filter: FC<IType> = ({children}) => {
-    const mediaQuery = useMediaQuery('(min-width:900px)');
+    const mediaQuery = useMediaQuery('(min-width:1270px)');
     return (
         <Stack direction={mediaQuery ? "row" : "column"} alignItems="center" justifyContent="space-between"
                spacing={7}

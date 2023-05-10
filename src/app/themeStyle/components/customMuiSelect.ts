@@ -10,7 +10,7 @@ export const customMuiSelect = {
             textOverflow: 'ellipsis',
             overflow: 'hidden',
             whiteSpace: 'nowrap',
-            "@media (min-width:900px)":{
+            "@media (min-width:1270px)":{
                 maxWidth: 160,
             }
         })),

@@ -9,7 +9,7 @@ interface IType {
 }
 
 const User: FC<IType> = ({children}) => {
-    const mediaQuery = useMediaQuery('(min-width:900px)');
+    const mediaQuery = useMediaQuery('(min-width:1270px)');
     return (
         <Paper>
             <Stack

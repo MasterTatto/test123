@@ -26,7 +26,7 @@ const AccountType: FC<T> = ({
                                 accountName,
                             }) => {
     const [updateAccount] = useUpdateAccountMutation()
-    const mediaQuery = useMediaQuery('(min-width:900px)');
+    const mediaQuery = useMediaQuery('(min-width:1270px)');
     const [openModal, setOpenModal] = useState(false);
     const nameAccount = useInput('',false,true)
 

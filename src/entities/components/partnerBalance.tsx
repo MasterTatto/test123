@@ -10,7 +10,7 @@ interface IType {
 
 const PartnerBalance: FC<IType> = ({children}) => {
     const { data, error, isLoading }=useGetReferralDataQuery('/main')
-    const mediaQuery = useMediaQuery('(min-width:900px)');
+    const mediaQuery = useMediaQuery('(min-width:1270px)');
     const [openModal, setOpenModal] = useState(false);
 
     const handleOpenModal = (event: React.SyntheticEvent) => {

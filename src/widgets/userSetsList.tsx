@@ -16,7 +16,7 @@ interface IType {
 }
 
 const UserSetsList: FC<IType> = ({children}) => {
-    const mediaQuery = useMediaQuery('(min-width:900px)');
+    const mediaQuery = useMediaQuery('(min-width:1270px)');
     const [page, setPage] = useState(1);
     const {data, isLoading, error} = useGetSetQuery(page)
     const [addAccountSubscribe] = useAddAccountSubscribeMutation()

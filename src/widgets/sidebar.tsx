@@ -31,7 +31,7 @@ interface T {
 }
 
 const Sidebar: FC<T> = ({isAdmin}) => {
-    const mediaQuery = useMediaQuery('(min-width:900px)');
+    const mediaQuery = useMediaQuery('(min-width:1270px)');
     const [visibleMenu, setVisibleMenu] = useState(true)
     useEffect(() => {
         if (!mediaQuery) {

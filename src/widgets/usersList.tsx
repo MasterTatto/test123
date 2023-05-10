@@ -9,7 +9,7 @@ interface IType {
 }
 
 const UsersList: FC<IType> = ({children}) => {
-    const mediaQuery = useMediaQuery('(min-width:900px)');
+    const mediaQuery = useMediaQuery('(min-width:1270px)');
     return (
         <Stack spacing={7}>
             <Stack direction={mediaQuery ? "row" : "column-reverse"} justifyContent="space-between" spacing={7}>

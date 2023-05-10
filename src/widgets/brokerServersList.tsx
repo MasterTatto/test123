@@ -19,7 +19,7 @@ interface IType {
 const BrokerServersList: FC<IType> = ({children}) => {
     const {data: isDataServers} = useGetAllServersQuery('/servers')
 
-    const mediaQuery = useMediaQuery('(min-width:900px)');
+    const mediaQuery = useMediaQuery('(min-width:1270px)');
     const [openModal, setOpenModal] = useState(false);
     const [openModalUpdate, setOpenModalUpdate] = useState(false);
     const [openModalDelete, setOpenModalDelete] = useState(false);

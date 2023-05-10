@@ -13,7 +13,7 @@ interface T {
 const AccountCardList: FC<T> = ({}) => {
     const [accountPage, setAccountPPage] = useState(1);
     const {data, error, isLoading} = useGetAccountsQuery(accountPage)
-    const mediaQuery = useMediaQuery('(min-width:900px)');
+    const mediaQuery = useMediaQuery('(min-width:1270px)');
     const [openModal, setOpenModal] = useState(false);
 
     if (error) {
@@ -31,7 +31,12 @@ const AccountCardList: FC<T> = ({}) => {
         <>
             <Grid container spacing={10} columns={16} wrap="wrap">
                 <Grid item xs={16} md={8} onClick={() => setOpenModal(true)} sx={{cursor: "pointer"}}>
-                    <Stack sx={{height: mediaQuery ? 400 : 110,  border: ` 0.5px dashed #3C3C3C`, borderRadius: 2.5, overflow: 'hidden'}}>
+                    <Stack sx={{
+                        height: mediaQuery ? 400 : 110,
+                        border: ` 0.5px dashed #3C3C3C`,
+                        borderRadius: 2.5,
+                        overflow: 'hidden'
+                    }}>
                         <Stack justifyContent="center" alignItems="center" sx={{height: `100%`}}>
                             <Stack sx={{mb: 7}}>
                                 <IconPlus size={20} color="#3C3C3C"/>
@@ -72,7 +77,7 @@ const AccountCardList: FC<T> = ({}) => {
                         )
                 }
             </Grid>
-            <AccountModal openModal={openModal} closeModal={setOpenModal}/>
+            {openModal && <AccountModal openModal={openModal} closeModal={setOpenModal}/>}
             {
                 data?.meta?.pagination?.total_pages > 1 &&
                 <Pagination
@@ -82,7 +87,7 @@ const AccountCardList: FC<T> = ({}) => {
                     count={data?.meta?.pagination?.total_pages}
                     variant="outlined"
                     shape="rounded"
-                    sx={{mr: 'auto', ml:'auto', mt:14,maxWidth: 'max-content'}}
+                    sx={{mr: 'auto', ml: 'auto', mt: 14, maxWidth: 'max-content'}}
                 />
 
             }

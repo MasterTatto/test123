@@ -25,7 +25,7 @@ const Chart: FC<T> = ({
                           icon
                       }) => {
     return (
-        <Paper sx={{flexGrow :1,"@media (min-width:900px)":{
+        <Paper sx={{flexGrow :1,"@media (min-width:1270px)":{
                 padding: `14px 4px`,
             }}}>
             <HeaderChart title={title} icon={icon} selectTitle={selectTitle} defaultValue={defaultValue} date={date} select={select} number={number}/>
